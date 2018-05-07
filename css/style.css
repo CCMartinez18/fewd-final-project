@@ -1,13 +1,9 @@
-/*
-Project Name: EL Conferencing Services
-Client: ELDST 
-Author: Carmen Martinez
-Developer @GA in DC
-*/
 
 /******************************************
 /* SETUP
 /*******************************************/
+
+/* Box Model Hack */
 
 html {
   box-sizing: border-box;
@@ -24,10 +20,42 @@ html {
 /*******************************************/
 
 body {
-  color: #000;
-  font-size: 12px;
+  color: #f0efef;
+  font-size: 26px;
   line-height: 1.4;
-  font-family: 'Open Sans', sans-serif;
+  color: #606161;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+}
+
+h3 {
+  color: #033048;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+blockquote {
+  font-size: 36px;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  max-width: 580px;
+  margin: 0 auto;
+}
+
+blockquote span {
+  font-weight: 600;
+  display: block;
+  font-style: normal;
+}
+
+img {
+  max-width: 100%;
 }
 
 /******************************************
@@ -37,72 +65,45 @@ body {
 /* Center the container */
 
 .container {
-  width: 100%;
-  margin: auto;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.header {
-  font-size: 24px;
-  font-weight: 600;
-  background: linear-gradient(#186892, #3fabe6, #f0efef);
-  margin: auto;
-  padding: 10px 0px 10px 30px;
-  display: flex;
-  justify-content: center;
+.hide {
+  display: none;
 }
 
-.header a {
-  color: white;
-  text-decoration-line: none
-}
+/******************************************
+/* BUTTONS
+/*******************************************/
 
-.header li {
-  list-style-type: none;
-  flex: 1;
-  display: inline;
-  padding-right: 30px;
-}
-
-.content {
-  padding: 10px 30px 10px 30px;
-  background: #f0efef;
-  display: flex;
-  flex-direction: row;
-  grid-gap: 20px;
-}
-
-.main {
-  width: 700px;
-  flex: 2;
-}
-
-.main h1,
-h2 {
-  color: grey;
-  font-size: 32px;
+.button {
+  border-radius: 5px;
   font-weight: 800;
-  text-align: center
+  padding: 12px 0;
+  min-width: 280px;
+  font-size: 28px;
+  text-align: center;
+  display: inline-block;
 }
 
-.meeting {
-  width: 100%;
+.primary {
+  background: #f9e42e;
+  color: #033048;
 }
 
-.meetingtype {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-
-.main p {
+.secondary {
+  background: #186892;
+  color: #fff;
   font-size: 24px;
-  font-weight: 300;
-  text-align: justify;
-  padding: 20px;
+  padding: 10px;
 }
 
-/* FORM */
+
+
+/******************************************
+/* FORM
+/*******************************************/
 
 /* Style inputs with type="text", select elements and textareas */
 
@@ -151,104 +152,252 @@ input[type=submit]:hover {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
+
 }
+
 
 /* FORM */
 
-.info {
-  margin: auto;
-  padding: 10px;
+
+
+/******************************************
+/* HEADER
+/*******************************************/
+
+.logo {
+  font-size: 48px;
+  font-weight: 800;
 }
 
-.iconimg {
-  height: 226;
-  width: 227;
-  border-radius: 10px;
-  padding: 30px, 30px, 30px, 30px;
+header {
+  background: linear-gradient(#186892, #3fabe6, #f0efef);;
+  padding: 25px;
+  text-align: center;
+}
+
+@media(min-width: 768px) {
+  header .container {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+}
+
+header .logo {
+  color: #fff;
+}
+
+/******************************************
+/* NAV
+/*******************************************/
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+@media(min-width: 768px) {
+  nav ul {
+    display: flex;
+  }
+}
+
+nav li {
+  font-size: 24px;
+}
+
+@media(min-width: 768px) {
+  nav li {
+    margin-left: 40px;
+  }
+}
+
+nav li:first-child {
+  margin-left: 0;
+}
+
+nav a {
+  color: white;
+}
+
+
+/******************************************
+/* MAIN
+/*******************************************/
+
+.main {
+  margin-top: 80px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.main img{
+  display: block;
+  margin-right: auto;
+  margin-left: auto; 
+}
+
+@media(min-width: 768px) {
+  .main .container {
+    display: flex;
+  }
+}
+
+.posts {
+  vertical-align: top;
+}
+
+@media(min-width: 768px) {
+  .posts {
+    padding-right: 20px;
+  }
 }
 
 .sidebar {
-  background: linear-gradient(#f0efef, lightgrey, grey, lightgrey, #f0efef);
-  padding: 10px 30px 10px 30px;
-  width: 240px;
-  flex: 1;
-  order: -1;
+  vertical-align: top;
 }
 
-.ellogo {
-  width: 40%;
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  border-radius: 10px;
-  padding: 0px 10px 0px 10px;
+@media(min-width: 768px) {
+  .sidebar {
+    min-width: 240px;
+  }
 }
 
-.sidebarimg {
-  max-width: 100%;
-  height: auto;
-  box-shadow: 0 0 8px 8px grey inset;
+.post {
+  border-bottom: 1px solid #043049;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
 }
 
-.sidebar h3 {
-  color: grey;
-  font-size: 24px;
+.post h2 {
   font-weight: 600;
+  font-size: 40px;
+  line-height: 1.3;
+  margin-bottom: 30px;
+}
+
+.post h2 {
+  color: #186892;
+  text-align: center;
+}
+
+.post img {
+  margin-bottom: 30px;
+}
+
+.post p {
+  font-size: 24px;
+  line-height: 1.333;
+  color: #186892;
+  text-align: justify;
+}
+
+.readmore,
+.readless, 
+.wiki{
+  text-align: right;
+  margin-top: 30px;
+}
+
+.readmore a,
+.readless a,
+.wiki a{
+  color: #186892;
+  font-weight: 600;
+}
+
+.sidebar{
+  box-shadow: 0 0 16px 16px grey;
+  background: linear-gradient(#f0efef,grey, #f0efef,lightgrey, lightgrey, white, white, white);
+  border-color: #3fabe6;
+  padding: 10px 30px 10px 30px;
+  max-width: 100%;
+  margin: 25px;
+
+}
+.sidebar h3 {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 15px;
+  color: grey;
   text-align: center;
 }
 
 .sidebar ul {
-  padding: 0;
-  list-style-type: none;
+  margin-bottom: 40px;
+  list-style: url("http://www.animatedimages.org/data/media/111/animated-arrow-image-0133.gif"); 
 }
 
-.sidebar li {
-  padding-bottom: 20px;
-  color: white;
-  font-size: 20px;
-  font-weight: 600;
-}
-
-.sidebar a {
-  color: #087ab8;
+.sidebar ul li a {
+  color:#186892;
+  font-size: 24px;
+  
 }
 
 .sidebar p {
-  color: white;
-  font-size: 20px;
+  font-size: 22px;
+  line-height: 1.1;
+  margin-bottom: 40px;
+  text-align: left, justify;
+}
+
+.sidebar p a {
+  color: #186892;
   font-weight: 600;
-  text-align: justify;
 }
 
-.footer {
-  background: linear-gradient(#f0efef, #3fabe6, #186892);
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 20px;
-  font-weight: 300;
-  text-align: center;
-  padding: 20px 60px 20px 60px;
-}
-
-.footer p {
-  margin: 5px;
-}
-
-.footer a {
-  color: white;
-  text-decoration-line: none
-}
-.footer button {
-  background: #3fabe6;
-  font: 12px;
-  font-weight: 800;
-  color: white;
-  width: auto;
-  border-radius: 10px;
-  text-align: right;
-  padding: 20px 60px 20px 60px;
+.sidebar img{
+  box-shadow: 5px 5px 6px #186892;
+  padding: 10px; border: 1px solid #3fabe6;
 }
 
 /******************************************
-/* ADDITIONAL STYLES
+/* BOTTOM CTA
 /*******************************************/
+
+.bottom-cta {
+  background:linear-gradient(#f0efef, lightgrey,grey);
+  box-shadow: 0 0 16px 16px grey;
+  padding: 30px;
+  text-align: center;
+}
+.bottom-cta img{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  display: block;
+}
+
+/******************************************
+/* FOOTER
+/*******************************************/
+
+footer {
+  background: linear-gradient(#f0efef, #3fabe6, #186892);
+  padding: 65px 0 45px;
+  text-align: center;
+}
+
+footer .logo {
+  color: #186892;
+  margin-bottom: 68px;
+}
+
+footer p {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.social {
+  margin: 0;
+  margin-bottom: 75px;
+  padding: 0;
+  display: inline-flex, stretch;
+  list-style-type: none;
+}
+
+.social > li {
+  margin-left: 26px;
+  margin-right: 26px;
+}

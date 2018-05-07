@@ -3,11 +3,10 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="Your description goes here">
-  <meta name="keywords" content="one, two, three">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600,800" rel="stylesheet">
+  <meta name="description" content="The perfect personal assistant. Relaxr does your job for you so you can enjoy life as it is meant to be.">
 
-  <title>BlueJeans Meetings</title>
+  <title>BlueJeans </title>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,300,600,800' rel='stylesheet' type='text/css'>
 
   <!-- external CSS link -->
   <link rel="stylesheet" href="css/normalize.css">
@@ -16,33 +15,58 @@
 </head>
 
 <body>
-  <div class="container">
-    <section class="header">
-      <ul>
-        <li>
-          <a href="index.html">Home</a>
-        </li>
-        <li>
-          <a href="webex.html">WebEx</a>
-        </li>
-        <li>
-          <a href="https://elwiki.el.nist.gov">ELDST Wiki</a>
-        </li>
-        <li>
-          <a href="contactus.html">Contact Us</a>
-        </li>
-      </ul>
-    </section>
-    <div class="content">
-      <section class="main">
-        <img class="meetingtype" src="images/bluejeans_landscape.png">
-        <div class="info">
-          <p>Simple, Immersive, and Video Conferencing * Connect instantly with colleagues and customers from virtually any
-            mobile device, laptop or conference room system. * Screen Sharing and Collaboration * Instantly share your latest
-            presentations, documents and video clips. Share your entire screen or a single application. * Maximum number
-            of participants allowed in a BlueJeans meeting: 100 participants
+  <header>
+    <div class="container">
+      <img src="images/el_logo.png" class="logo" alt="Engineering Laboratory Logo">
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="webex.html">WebEx</a>
+          </li>
+          <li>
+            <a href="https://elwiki.el.nist.gov">ELDST Wiki</a>
+          </li>
+          <li>
+            <a href="contactus.html">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="main">
+    <div class="container">
+      <section class="posts">
+        <article class="post">
+
+          <img src="images/bluejeans_landscape.png" alt="BlueJeans Logo">
+          <p>BlueJeans Meetings enable easy to use, enterprise-grade video calls - all in high definition Dolby audio. Connect
+            instantly with colleagues and customers from virtually any mobile device, laptop or conference room system. Communicate
+            using the highest quality HD video, Dolby Voice audio, and screen sharing.</p>
+
+          <p class="readmore">
+            <a href="#">Read more &gt;</a>
           </p>
-          <h2>BlueJeans Meeting Request</h2>
+          <p class="hide" id="show-this-on-click">Simple, Immersive, and Video Conferencing. Maximum number of participants allowed in a BlueJeans meeting: 100 participants.
+            Easy to Use - Host, join and schedule one touch video meetings from anywhere, on any device. Experience consistent,
+            flawless video conferencing across devices and platforms. Immersive Experience - HD video calls with stunningly
+            clear audio makes you feel like you’re in the same room, even if you’re thousands of miles away. Enhanced Collaboration
+            - Drive efficiencies across the workplace with robust, out-of-the-box collaboration tools and integrated workflow
+            applications. Connect instantly with colleagues and customers from virtually any mobile device, laptop or conference
+            room system. Screen Sharing and Collaboration. Instantly share your latest presentations, documents and video
+            clips. Share your entire screen or a single application. Join meetings from laptops, room systems, mobile devices,
+            and phones - no download required.</p>
+          <p class="readless hide">
+            <a href="#">Read less &gt;</a>
+          </p>
+        </article>
+        <article class="post">
+          <h2>
+            BlueJeans Meeting Request
+          </h2>
+
           <div class="form">
             <form action="action_page.php">
 
@@ -73,11 +97,24 @@
 
             </form>
           </div>
-        </div>
+        </article>
       </section>
-      <section class="sidebar">
-        <img class="ellogo" src="images/el_logo.png">
-        <h3>BlueJeans Support </h3>
+      <aside class="sidebar">
+        <h3>Information</h3>
+        <ul>
+
+          <li>
+            <a href="webex.html">Click for More About WebEx Meetings and Support Or to Schedule a Meeting</a>
+          </li>
+          <li>
+            <a href="https://elwiki.el.nist.gov"> ELDST Wiki</a>
+          </li>
+          <li>
+            <a href="contactus.html">Contact Us</a>
+          </li>
+        </ul>
+        <h3>BlueJeans Support</h3>
+        <img src="images/bluejeans-logo.jpg" alt="BlueJeans Logo with Camera">
         <ul>
           <li>Test your system:
             <a href="https://bluejeans.com/111">Join a test meeting</a>
@@ -92,26 +129,33 @@
             <a href="https://support.bluejeans.com/video/share-content%7CSharing">Sharing content in a meeting.</a>
           </li>
         </ul>
-        <img class="sidebarimg" src="images/video_conference.png">
 
-      </section>
+      </aside>
     </div>
-    <section class="footer">
+  </section>
 
+  <aside class="bottom-cta">
+    <a class="button secondary" href="contactus.html">Click to Create an ELDST Ticket</a>
+    <img src="images/threeamigos.png" alt="Three Amigos in Class">
+  </aside>
+  <footer>
+    <h4 class="logo">EL Data, Security, and Technology (ELDST)</h4>
 
+    <ul class="social">
+      <li>For technical assistance, ELDST Support:</li>
+      <li>Building 224 Room B251</li>
+      <li>
+        <a href="mailto:help@el.nist.gov"> ELDST@nist.gov</li>
+      </li>
+      <li>
+        301-975-8146
+      </li>
+    </ul>
 
-      <p>For technical assistance, ELDST Support:</p>
-      <p>Building 224 Room B251</p>
-      <p>
-        <a href="mailto:help@el.nist.gov"> ELDST@nist.gov</a>
-      </p>
-      <p>301-975-8146</p>
-
-      <button>
-        <a href="contactus.html">EL Data, Security, and Technology (ELDST)</a>
-      </button>
-    </section>
-  </div>
+    <p class="copyright">Copyright 2018. ELDST.</p>
+  </footer>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/exercise.js"></script>
 </body>
 
 </html>

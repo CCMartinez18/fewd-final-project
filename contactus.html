@@ -3,11 +3,10 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="Your description goes here">
-  <meta name="keywords" content="one, two, three">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600,800" rel="stylesheet">
+  <meta name="description" content="The perfect personal assistant. Relaxr does your job for you so you can enjoy life as it is meant to be.">
 
-  <title>Contact Us</title>
+  <title>Contact Us </title>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,300,600,800' rel='stylesheet' type='text/css'>
 
   <!-- external CSS link -->
   <link rel="stylesheet" href="css/normalize.css">
@@ -16,32 +15,36 @@
 </head>
 
 <body>
-  <div class="container">
-    <section class="header">
+  <header>
+    <div class="container">
+      <img src="images/el_logo.png" class="logo" alt="Engineering Laboratory Logo">
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="bluejeans.html">BlueJeans</a>
+          </li>
+          <li>
+            <a href="webex.html">WebEx</a>
+          </li>
+          <li>
+            <a href="https://elwiki.el.nist.gov">ELDST Wiki</a>
+          </li>
 
-      <ul>
-        <li>
-          <a href="index.html">Home</a>
-        </li>
-        <li>
-          <a href="bluejeans.html">BlueJeans</a>
-        </li>
-        <li>
-          <a href="webex.html">WebEx</a>
-        </li>
-        <li>
-          <a href="https://elwiki.el.nist.gov">ELDST Wiki</a>
-        </li>
-        <li>
-          <a href="contactus.html">Contact Us</a>
-        </li>
-      </ul>
-    </section>
-    <div class="content">
-      <section class="main">
-
-        <div class="info">
-          <h2>Create an ELDST Helpdesk Request</h2>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="main">
+    <div class="container">
+      <section class="posts">
+        <article class="post">
+          <h2>
+            Create an ELDST Helpdesk Request
+          </h2>
+          <img src="images/puzzle-solution.jpg" alt="Puzzle Solution">
           <div class="form">
             <form action="action_page.php">
 
@@ -49,7 +52,7 @@
               <input type="text" id="email" name="email" placeholder="Your Email Adress..">
 
               <label for="email">Subject</label>
-              <input type="text" id="email" name="email" placeholder="Your Email Adress..">
+              <input type="text" id="subject" name="subject" placeholder="Your Subject..">
 
               <label for="support">Type of Support</label>
               <select id="support" name="support">
@@ -68,32 +71,62 @@
               <input type="submit" value="Submit">
 
             </form>
-          </div>
-        </div>
-      </section>
-      <section class="sidebar">
-        <img class="ellogo" src="images/el_logo.png">
-        <h3>ELDST Support </h3>
+        </article>
 
+      </section>
+      <aside class="sidebar">
+        <h3>Information</h3>
         <ul>
+
+          <li>
+            <a href="bluejeans.html">Click for More About BlueJeans Meetings and Support Or to Schedule a Meeting</a>
+          </li>
+          <li>
+            <a href="webex.html">Click for More About WebEx Meetings and Support Or to Schedule a Meeting</a>
+          </li>
+          <li>
+            <a href="https://elwiki.el.nist.gov"> ELDST Wiki</a>
+          </li>
+        </ul>
+        <h3>Contact Information</h3>
+        <img src="images/contact-us-pic.jpg" alt="Man Leaning on Contact Us Letters">
+        <ul>
+          <li>For technical assistance, ELDST Support:</li>
           <li>Building 224 Room B251</li>
           <li>
-            <a href="mailto:help@el.nist.gov"> ELDST@nist.gov</a>
+            <a href="mailto:help@el.nist.gov"> ELDST@nist.gov</li>
           </li>
-          <li>301-975-8146</li>
+          <li>
+            301-975-8146
+          </li>
         </ul>
-        <img class="sidebarimg" src="images/contact-us-pic.jpg">
 
-      </section>
-    </div>
-    <section class="footer">
+      </aside>
+      </div>
+  </section>
 
+  <aside class="bottom-cta">
+    <a class="button secondary" href="https://elwiki.el.nist.gov">Visit our ELDST Wiki Site</a>
+    
+  </aside>
+  <footer>
+    <h4 class="logo">EL Data, Security, and Technology (ELDST)</h4>
 
-      <button>
-        <a href="contactus.html">EL Data, Security, and Technology (ELDST)</a>
-      </button>
-    </section>
-  </div>
+    <ul class="social">
+      <li>For technical assistance, ELDST Support:</li>
+      <li>Building 224 Room B251</li>
+      <li>
+        <a href="mailto:help@el.nist.gov"> ELDST@nist.gov</li>
+      </li>
+      <li>
+        301-975-8146
+      </li>
+    </ul>
+
+    <p class="copyright">Copyright 2018. ELDST.</p>
+  </footer>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/exercise.js"></script>
 </body>
 
 </html>
