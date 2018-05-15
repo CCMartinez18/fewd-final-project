@@ -15,6 +15,18 @@ html {
   box-sizing: inherit;
 }
 
+.sidebar li:before { 
+  content: "";
+  border-color: transparent red;
+  border-style: solid;
+  border-width: 0.35em 0 0.35em 0.45em;
+  display: block;
+  height: 0;
+  width: 0;
+  left: -1em;
+  top: 0.9em;
+  position: relative;
+}
 /******************************************
 /* BASE STYLES
 /*******************************************/
@@ -155,6 +167,16 @@ input[type=submit]:hover {
 
 }
 
+.center {
+    margin: auto;
+    width: 60%;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.hideform {
+    display: none;
+}
 
 /* FORM */
 
@@ -167,6 +189,11 @@ input[type=submit]:hover {
 .logo {
   font-size: 48px;
   font-weight: 800;
+  
+}
+
+.logo img{
+  box-shadow: 0px 0px 16px 16px white;
 }
 
 header {
@@ -250,6 +277,7 @@ nav a {
 @media(min-width: 768px) {
   .posts {
     padding-right: 20px;
+    width: 70%;
   }
 }
 
@@ -260,6 +288,7 @@ nav a {
 @media(min-width: 768px) {
   .sidebar {
     min-width: 240px;
+    width: 30%;
   }
 }
 
@@ -307,12 +336,12 @@ nav a {
 }
 
 .sidebar{
-  box-shadow: 0 0 16px 16px grey;
-  background: linear-gradient(#f0efef,grey, #f0efef,lightgrey, lightgrey, white, white, white);
+  box-shadow: 0px -4px 7px grey;
+  background: linear-gradient( #f0efef, white,lightgrey,grey);
   border-color: #3fabe6;
   padding: 10px 30px 10px 30px;
   max-width: 100%;
-  margin: 25px;
+  /* margin: 25px; */
 
 }
 .sidebar h3 {
@@ -325,13 +354,14 @@ nav a {
 
 .sidebar ul {
   margin-bottom: 40px;
-  list-style: url("http://www.animatedimages.org/data/media/111/animated-arrow-image-0133.gif"); 
+  padding: 0 1em;
+  list-style: none;
 }
 
 .sidebar ul li a {
   color:#186892;
   font-size: 24px;
-  
+
 }
 
 .sidebar p {
@@ -349,6 +379,7 @@ nav a {
 .sidebar img{
   box-shadow: 5px 5px 6px #186892;
   padding: 10px; border: 1px solid #3fabe6;
+  background: white;
 }
 
 /******************************************
@@ -374,19 +405,24 @@ nav a {
 
 footer {
   background: linear-gradient(#f0efef, #3fabe6, #186892);
-  padding: 65px 0 45px;
+  /* padding: 65px 0 45px; */
   text-align: center;
 }
 
 footer .logo {
   color: #186892;
-  margin-bottom: 68px;
+  /* margin-bottom: 68px; */
+}
+
+footer h4{
+  margin: 0;
 }
 
 footer p {
   font-size: 18px;
   color: #fff;
   font-weight: 600;
+  margin: 0;
 }
 
 .social {
@@ -397,7 +433,93 @@ footer p {
   list-style-type: none;
 }
 
+.social ul{
+  margin-bottom: 0;
+}
+
 .social > li {
   margin-left: 26px;
-  margin-right: 26px;
+  margin-right: 26px;  
+
+}
+
+/******************************************
+/* Options Page
+/*******************************************/
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+
+.results {
+  /* float: left; */
+  width: 450px;
+  padding: 20px;
+}
+
+.info {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  display: flex; 
+  flex-wrap: wrap;
+  /* float: left; */
+}
+
+.info ul{
+ 
+}
+
+.info li {
+  height: 150px;
+  width: 150px;
+  border: 5px solid transparent;
+  background-size: cover;
+  float: left;
+  cursor: pointer;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, .8);
+  padding: 10px;
+}
+
+.info .active {
+  border-color: #186892;;
+}
+
+.webex {
+  background-image: url('../images/cisco-webex.jpg');
+}
+
+.bluejeans {
+  background-image: url('../images/bluejeansoptions.jpg');
+}
+
+.livestream {
+  background-image: url('../images/livestream_options.jpg');
+}
+
+.preconference {
+  background-image: url('../images/preconferencing.jpg');
+}
+
+.postconference {
+  background-image: url('../images/postconference.jpg');
+}
+
+.aboutus {
+  background-image: url('../images/aboutus.png');
+}
+
+.contactus {
+  background-image: url('../images/contactusmain.jpg');
+}
+
+.eldstwiki {
+  background-image: url('../images/wiki.jpg');
+}
+
+.ticket {
+  background-image: url('../images/ticket.jpg');
 }
